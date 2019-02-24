@@ -155,16 +155,16 @@ function update() {
      
 
 function fbtA(){
-if(vw<600){
+
     fbthabla("A")
 
-}alert("A");
+
     
 }
 function fbtB(){
-if(vw<600){
+
     fbthabla("B")
-}alert("B");
+
     
 }
 
@@ -177,8 +177,14 @@ function fidcerrar(){
 
 
 function fbthabla(st){
- 
-            fandroid("hablaingles",st,"","");
+    if(vw<700){
+        fandroid("hablaingles",String(st),"","");
+
+        fandroid("hablaingles","the  car is  blue dos","","");
+
+    }else{
+        alert(vw);
+    }
         
         }
 
@@ -187,7 +193,7 @@ function fbthabla(st){
 
 
 
-
+        fandroid("hablaingles","the  car is  red","","");
 
 
         </script>
