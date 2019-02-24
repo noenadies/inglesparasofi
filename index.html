@@ -68,7 +68,7 @@
 
         </style>
     </head>
-    <body> <button onclick="fidcerrar();" id="idcerrar" >X</button>
+    <body onload="onloadsi();"> <button onclick="fidcerrar();" id="idcerrar" >X</button>
         <div id="phaser-example"></div>
 
         <script type="text/javascript">
@@ -79,12 +79,14 @@ var vw=window.innerWidth;
 var vh=window.innerHeight;
 var ventana=vw;
         
-var game = new Phaser.Game(vw,vh, Phaser.AUTO, 'phaser-example', {preload: preload, create: create, update: update });
 
 var textA;
 var textB;
+var game;
+function onloadsi(){
+  game= new Phaser.Game(vw,vh, Phaser.AUTO, 'phaser-example', {preload: preload, create: create, update: update });
 
-
+}
 
 function preload() {
 
